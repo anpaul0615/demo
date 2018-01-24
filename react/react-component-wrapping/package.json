@@ -1,0 +1,22 @@
+{
+  "name": "react-component-wrapping",
+  "version": "0.1.0",
+  "private": true,
+  "dependencies": {
+    "react": "^16.0.0",
+    "react-dom": "^16.0.0",
+    "react-redux": "^5.0.6",
+    "redux": "^3.7.2",
+    "redux-logger": "^3.0.6"
+  },
+  "devDependencies": {
+    "cross-env": "^5.1.0",
+    "react-scripts": "1.0.14"
+  },
+  "scripts": {
+    "start": "cross-env NODE_PATH=src react-scripts start",
+    "build": "cross-env NODE_PATH=src react-scripts build",
+    "test": "cross-env NODE_PATH=src react-scripts test --env=jsdom",
+    "eject": "react-scripts eject"
+  }
+}

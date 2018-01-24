@@ -1,0 +1,7 @@
+.PostComment p {
+  font-size: 1.2rem;
+  color: #868e96;
+}
+.PostComment p b {
+  color: #212529;
+}
