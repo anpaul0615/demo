@@ -1,0 +1,13 @@
+{
+  "name": "webpack-v1-config",
+  "version": "1.0.0",
+  "scripts": {
+    "test": "node bin/App.bundle.js",
+    "build": "webpack"
+  },
+  "dependencies": {
+  },
+  "devDependencies": {
+    "webpack": "^1.15.0"
+  }
+}
