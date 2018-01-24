@@ -1,0 +1,13 @@
+{
+  "name": "hapi-cors-cookie",
+  "version": "1.0.0",
+  "scripts": {
+    "start:api": "node ./api/api-server.js",
+    "start:spa": "node ./spa/spa-server.js"
+  },
+  "dependencies": {
+    "hapi": "^16.5.2",
+    "inert": "^4.2.1"
+  },
+  "devDependencies": {}
+}
