@@ -1,0 +1,24 @@
+<!doctype html>
+<html lang="ko">
+<head>
+    <meta charset="utf-8"/>
+    <title>Hello, socket.io</title>
+    <script src="https://cdn.socket.io/socket.io-1.4.5.js"></script>
+    <!-- <script src="http://localhost/socket.io/socket.io.js"></script> -->
+    <!-- <script src="/socket.io/socket.io.js"></script> -->
+
+    <script>
+    var socket = io("http://localhost:8888");
+    socket.on('from_server', function(data){
+      var html ='<h1>' + data + '</h1>';
+      document.getElementById('output').innerHTML = html;
+
+      socket.emit('from_client', 'hellohello');
+    });
+    socket.emit('from_client', 'hellohello');
+    </script>
+</head>
+<body>
+    <div id='output'></div>
+</body>
+</html>

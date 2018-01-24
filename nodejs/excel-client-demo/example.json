@@ -1,0 +1,38 @@
+﻿[
+	{
+	"moduleType" : "sheet",
+	"moduleName" : "거래처관리"
+	},
+	{
+	"moduleType" : "sheet",
+	"moduleName" : "견적서입력"
+	},
+	{
+	"moduleType" : "sheet",
+	"moduleName" : "견적서조회"
+	},
+	{
+	"moduleType" : "sheet",
+	"moduleName" : "거래처별집계"
+	},
+	{
+	"moduleType" : "form",
+	"moduleName" : "GET_DATE.frm"
+	},
+	{
+	"moduleType" : "form",
+	"moduleName" : "GET_PERIOD.frm"
+	},
+	{
+	"moduleType" : "form",
+	"moduleName" : "GET_COMPANY.frm"
+	},
+	{
+	"moduleType" : "normal",
+	"moduleName" : "Common.bas"
+	},
+	{
+	"moduleType" : "class",
+	"moduleName" : "DBSheetHandler.cls"
+	}
+]

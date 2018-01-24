@@ -1,0 +1,48 @@
+﻿<?xml version="1.0"?>
+<modules>
+
+	<!-- 시트모듈 -->
+	<module>
+		<moduleType>sheet</moduleType>
+		<moduleName>거래처관리</moduleName>
+	</module>
+	<module>
+		<moduleType>sheet</moduleType>
+		<moduleName>견적서입력</moduleName>
+	</module>
+	<module>
+		<moduleType>sheet</moduleType>
+		<moduleName>견적서조회</moduleName>
+	</module>
+	<module>
+		<moduleType>sheet</moduleType>
+		<moduleName>거래처별집계</moduleName>
+	</module>
+
+	<!-- 폼모듈 -->
+	<module>
+		<moduleType>form</moduleType>
+		<moduleName>GET_DATE.frm</moduleName>
+	</module>
+	<module>
+		<moduleType>form</moduleType>
+		<moduleName>GET_PERIOD.frm</moduleName>
+	</module>
+	<module>
+		<moduleType>form</moduleType>
+		<moduleName>GET_COMPANY.frm</moduleName>
+	</module>
+	
+	<!-- 일반모듈 -->
+	<module>
+		<moduleType>nromal</moduleType>
+		<moduleName>Common.bas</moduleName>
+	</module>
+
+	<!-- 클래스모듈 -->
+	<module>
+		<moduleType>class</moduleType>
+		<moduleName>DBSheetHandler.cls</moduleName>
+	</module>
+
+</modules>
