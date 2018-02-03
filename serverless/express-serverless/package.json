@@ -1,0 +1,23 @@
+{
+  "name": "express-serverless",
+  "version": "1.0.0",
+  "scripts": {
+    "start": "serverless offline start",
+    "deploy": "serverless deploy --stage dev",
+    "deploy:prod": "serverless deploy --stage prod"
+  },
+  "devDependencies": {
+    "babel-core": "^6.25.0",
+    "babel-loader": "^7.1.1",
+    "babel-plugin-transform-runtime": "^6.23.0",
+    "babel-polyfill": "^6.23.0",
+    "babel-preset-env": "^1.6.0",
+    "serverless-offline": "^3.16.0",
+    "serverless-webpack": "^3.1.1",
+    "webpack": "^3.3.0"
+  },
+  "dependencies": {
+    "express": "^4.16.2",
+    "serverless-http": "^1.5.2"
+  }
+}

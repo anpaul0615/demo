@@ -1,0 +1,27 @@
+service:
+  name: hello-serverless
+
+# Add the serverless-webpack plugin
+plugins:
+  - serverless-webpack
+  - serverless-offline
+
+provider:
+  name: aws
+  runtime: nodejs6.10
+  region: ap-northeast-2
+  state: dev
+
+functions:
+  API-Hello:
+    handler: serverless-api.Hello
+    events:
+      - http:
+          method: any
+          path: /api/hello
+  WWW-Home:
+    handler: serverless-www.Home
+    events:
+      - http:
+          method: get
+          path: /home
