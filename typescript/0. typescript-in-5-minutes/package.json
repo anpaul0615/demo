@@ -1,0 +1,12 @@
+{
+  "name": "typescript-in-5-minutes",
+  "version": "1.0.0",
+  "scripts": {
+    "test": "ts-node",
+    "build": "tsc"
+  },
+  "devDependencies": {
+    "ts-node": "^4.1.0",
+    "typescript": "^2.6.2"
+  }
+}

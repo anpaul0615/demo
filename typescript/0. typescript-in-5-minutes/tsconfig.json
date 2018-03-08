@@ -1,0 +1,18 @@
+{
+    "compilerOptions": {
+        "target": "es3",
+        "module": "commonjs",
+        "outDir": "bin/",
+        "noImplicitAny": true,
+        "removeComments": true,
+        "preserveConstEnums": true,
+        "sourceMap": true
+    },
+    "include": [
+        "**/*.ts"
+    ],
+    "exclude": [
+        "node_modules",
+        "**/*.spec.ts"
+    ]
+}
