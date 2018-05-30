@@ -1,0 +1,10 @@
+{
+    "dbms": "postgres",
+    "host": "127.0.0.1",
+    "port": "5432",
+    "user": "root",
+    "password": "root0000",
+    "database": "DB",
+    "connectionMin": 1,
+    "connectionMax": 1
+}

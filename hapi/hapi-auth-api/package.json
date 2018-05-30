@@ -1,0 +1,38 @@
+{
+  "name": "hapi-auth-api",
+  "version": "1.0.0",
+  "scripts": {
+    "test": "jest --watch",
+    "start": "export NODE_ENV=development||SET NODE_ENV=development&&babel-node ./src/server.js",
+    "build": "export NODE_ENV=production||SET NODE_ENV=production&&babel src/ --out-dir bin/",
+    "prod": "export NODE_ENV=production||SET NODE_ENV=production&&node ./bin/server.js",
+    "prod:pm2": "pm2 start ./pm2.prod.config.json"
+  },
+  "dependencies": {
+    "hapi": "^16.5.2",
+    "jsonwebtoken": "^8.0.0",
+    "mysql2": "^1.4.2",
+    "pg": "^7.4.0",
+    "sequelize": "^4.11.2"
+  },
+  "devDependencies": {
+    "babel-cli": "^6.26.0",
+    "babel-core": "^6.26.0",
+    "babel-jest": "^20.0.3",
+    "babel-plugin-transform-async-to-generator": "^6.24.1",
+    "babel-preset-es2015": "^6.24.1",
+    "jest": "^20.0.4"
+  },
+  "babel": {
+    "presets": [
+      "es2015"
+    ],
+    "plugins": [
+      "babel-plugin-transform-async-to-generator"
+    ],
+    "ignore": [
+      "__test__/"
+    ],
+    "minified": true
+  }
+}
