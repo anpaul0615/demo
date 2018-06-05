@@ -1,0 +1,24 @@
+{
+  "name": "ts-express-demo",
+  "version": "1.0.0",
+  "scripts": {
+    "start": "export NODE_ENV=development||SET NODE_ENV=development&&ts-node main.js",
+    "build": "export NODE_ENV=production||SET NODE_ENV=production&&tsc",
+    "prestart:prod": "npm run build",
+    "start:prod": "export NODE_ENV=production||SET NODE_ENV=production&&ts-node main.js"
+  },
+  "dependencies": {
+    "body-parser": "^1.18.3",
+    "cookie-parser": "^1.4.3",
+    "express": "^4.16.3"
+  },
+  "devDependencies": {
+    "@types/body-parser": "^1.17.0",
+    "@types/cookie-parser": "^1.4.1",
+    "@types/express": "^4.11.1",
+    "@types/morgan": "^1.7.35",
+    "@types/node": "^10.3.0",
+    "morgan": "^1.9.0",
+    "typescript": "^2.9.1"
+  }
+}
