@@ -1,0 +1,6 @@
+{
+    "accessKeyId": "xxxx",
+    "secretAccessKey": "yyyy",
+    "region": "us-east-1",
+    "endpoint": "email.us-east-1.amazonaws.com"
+}
