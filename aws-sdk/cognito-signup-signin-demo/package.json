@@ -1,0 +1,21 @@
+{
+  "name": "cognito-signup-signin-demo",
+  "version": "1.0.0",
+  "scripts": {
+    "signup": "babel-node src/main-1-signup.js",
+    "register": "babel-node src/main-2-register.js",
+    "signin": "babel-node src/main-3-signin.js"
+  },
+  "devDependencies": {
+    "babel-cli": "^6.26.0",
+    "babel-preset-env": "^1.7.0"
+  },
+  "dependencies": {
+    "amazon-cognito-identity-js": "^1.5.0"
+  },
+  "babel": {
+    "presets": [
+      "env"
+    ]
+  }
+}
