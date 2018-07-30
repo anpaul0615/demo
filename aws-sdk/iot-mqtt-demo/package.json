@@ -1,0 +1,36 @@
+{
+  "name": "iot-mqtt-demo",
+  "version": "1.0.0",
+  "scripts": {
+    "start": "babel-node src/main.js",
+    "test": "jest --watch"
+  },
+  "dependencies": {
+    "amazon-cognito-identity-js": "^2.0.19",
+    "aws-iot-device-sdk": "^2.2.1",
+    "aws-sdk": "^2.282.1",
+    "node-fetch": "^2.2.0"
+  },
+  "devDependencies": {
+    "babel-core": "^6.26.3",
+    "babel-jest": "^23.4.0",
+    "babel-plugin-transform-runtime": "^6.23.0",
+    "babel-preset-env": "^1.7.0",
+    "jest": "^23.4.1",
+    "loglevel": "^1.6.1"
+  },
+  "babel": {
+    "presets": [
+      "env"
+    ],
+    "plugins": [
+      "transform-runtime"
+    ],
+    "minified": true
+  },
+  "jest": {
+    "testPathIgnorePatterns": [
+      "/node_modules/"
+    ]
+  }
+}
