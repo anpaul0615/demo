@@ -1,0 +1,33 @@
+{
+  "name": "mobx-react-supermarket",
+  "version": "0.1.0",
+  "private": true,
+  "dependencies": {
+    "mobx": "^5.5.2",
+    "mobx-react": "^5.3.6",
+    "react": "^16.6.0",
+    "react-dom": "^16.6.0",
+    "react-scripts": "2.1.0",
+    "styled-components": "^4.0.3"
+  },
+  "scripts": {
+    "start": "react-app-rewired start",
+    "build": "react-app-rewired build",
+    "test": "react-app-rewired test",
+    "eject": "react-scripts eject"
+  },
+  "eslintConfig": {
+    "extends": "react-app"
+  },
+  "browserslist": [
+    ">0.2%",
+    "not dead",
+    "not ie <= 11",
+    "not op_mini all"
+  ],
+  "devDependencies": {
+    "@babel/plugin-proposal-decorators": "^7.1.2",
+    "mobx-react-devtools": "^6.0.3",
+    "react-app-rewired": "^1.6.2"
+  }
+}
