@@ -1,0 +1,43 @@
+{
+  "name": "babel-preset-env-demo",
+  "version": "1.0.0",
+  "main": "main.js",
+  "scripts": {
+    "use-development": "export NODE_ENV=development||SET NODE_ENV=development",
+    "use-production": "export NODE_ENV=production||SET NODE_ENV=production",
+    "build": "npm run use-production&&babel src/ --out-dir bin/",
+    "build:watch": "babel src --out-dir .compiled --source-maps --watch"
+  },
+  "devDependencies": {
+    "@babel/cli": "^7.2.3",
+    "@babel/core": "^7.2.2",
+    "@babel/preset-env": "^7.3.1"
+  },
+  "babel": {
+    "presets": [
+      [
+        "@babel/preset-env",
+        {
+          "useBuiltIns": "entry",
+          "targets": {
+            "node": "4"
+          }
+        }
+      ]
+    ],
+    "env": {
+      "production": {
+      },
+      "debug": {
+        "sourceMaps": "inline",
+        "retainLines": true
+      }
+    },
+    "minified": false,
+    "sourceMaps": true,
+    "ignore": [
+      "**/__test__/**",
+      "**/*.test.js"
+    ]
+  }
+}
