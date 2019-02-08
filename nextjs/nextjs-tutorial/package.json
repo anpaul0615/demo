@@ -1,0 +1,22 @@
+{
+  "name": "nextjs-tutorial",
+  "version": "1.0.0",
+  "main": "server.js",
+  "scripts": {
+    "use-development": "export NODE_ENV=development||SET NODE_ENV=development",
+    "use-production": "export NODE_ENV=production||SET NODE_ENV=production",
+    "use-analyze": "export ANALYZE=1||SET ANALYZE=1",
+    "build": "npm run use-production&&next build",
+    "build:analyze": "npm run use-production&&npm run use-analyze&&next build",
+    "start": "npm run start:dev",
+    "start:dev": "npm run use-development&&node server.js",
+    "start:prod": "npm run use-production&&next start -p 80"
+  },
+  "dependencies": {
+    "express": "^4.16.4",
+    "isomorphic-fetch": "^2.2.1",
+    "next": "^7.0.2",
+    "react": "^16.8.1",
+    "react-dom": "^16.8.1"
+  }
+}
