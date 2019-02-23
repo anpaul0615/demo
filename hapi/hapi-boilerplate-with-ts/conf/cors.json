@@ -1,0 +1,12 @@
+{
+	"origin": [ 
+		"*"
+	],
+	"headers": [
+		"Accept",
+		"Authorization",
+		"Content-Type",
+		"If-None-Match"
+	],
+	"credentials": true
+}

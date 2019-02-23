@@ -1,0 +1,10 @@
+{
+	"dbms": "mysql",
+	"host": "127.0.0.1",
+	"port": "3306",
+	"user": "test",
+	"password": "test0000",
+	"database": "TEST",
+	"connectionMin": 10,
+	"connectionMax": 1
+}
