@@ -1,0 +1,25 @@
+components:
+  schemas:
+    UserData:
+      type: object
+      required:
+        - username
+      properties:
+        username:
+          type: string
+    AccessToken:
+      type: string
+      format: byte
+    AccessTokenData:
+      type: object
+      properties:
+        id:
+          type: string
+        name:
+          type: string
+        contact:
+          type: string
+        address:
+          type: string
+        license:
+          type: string

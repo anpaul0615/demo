@@ -1,0 +1,95 @@
+paths:
+  /tokens:
+    post:
+      tags:
+        - 1. Auth
+      summary: 엑세스 토큰 생성
+      security:
+        - publicToken: []
+          accessToken: []
+      requestBody:
+        content:
+          application/json:
+            schema:
+              $ref: '#/components/schemas/UserData'
+      responses:
+        200:
+          content:
+            application/json:
+              schema:
+                type: object
+                properties:
+                  message:
+                    type: string
+        400:
+          description: '등록 실패 : 유효하지 않은 디바이스설정 정보'
+        401:
+          description: '요청 실패 : API 요청 권한 없음'
+  /tokens/me:
+    get:
+      tags:
+        - 1. Auth
+      summary: 엑세스 토큰 데이터 조회
+      security:
+        - publicToken: []
+          accessToken: []
+      responses:
+        200:
+          content:
+            application/json:
+              schema:
+                type: object
+                properties:
+                  message:
+                    type: string
+                  data:
+                    type: object
+                    properties:
+                      accessToken:
+                        $ref: '#/components/schemas/AccessToken'
+                      accessTokenData:
+                        $ref: '#/components/schemas/AccessTokenData'
+        404:
+          description: '조회 실패 : 조회 요청은 성공했으나 조회된 값이 없음 (no-data)'
+        401:
+          description: '요청 실패 : API 요청 권한 없음'
+    put:
+      tags:
+        - 1. Auth
+      summary: 엑세스 토큰 갱신
+      security:
+        - publicToken: []
+          accessToken: []
+      responses:
+        200:
+          content:
+            application/json:
+              schema:
+                type: object
+                properties:
+                  message:
+                    type: string
+        400:
+          description: '수정 실패 : 유효하지 않은 속성'
+        401:
+          description: '요청 실패 : API 요청 권한 없음'
+    delete:
+      tags:
+        - 1. Auth
+      summary: 엑세스 토큰 삭제
+      security:
+        - publicToken: []
+          accessToken: []
+      responses:
+        200:
+          content:
+            application/json:
+              schema:
+                type: object
+                properties:
+                  message:
+                    type: string
+        400:
+          description: '삭제 실패 : 유효하지 않은 대상'
+        401:
+          description: '요청 실패 : API 요청 권한 없음'

@@ -1,0 +1,31 @@
+paths:
+  /:
+    get:
+      tags:
+        - 0. Common
+      summary: Get API Information
+      security:
+        - publicToken: []
+      responses:
+        200:
+          description: API 정상동작중
+  /documents/view:
+    get:
+      tags:
+        - 0. Common
+      summary: Get API Document
+      security:
+        - publicToken: []
+      responses:
+        200:
+          description: API 문서 수신 성공
+  /documents/spec:
+    get:
+      tags:
+        - 0. Common
+      summary: Get API Document
+      security:
+        - publicToken: []
+      responses:
+        200:
+          description: API 문서 메타데이터 수신 성공

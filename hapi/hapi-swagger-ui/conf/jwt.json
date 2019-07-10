@@ -1,0 +1,10 @@
+{
+	"signOption": {
+		"algorithm": "HS256",
+		"expiresIn": "1y"
+	},
+	"verifyOption": {
+		"algorithms": ["HS256", "RS256"]
+	},
+	"secret": "your-secret-key"
+}
