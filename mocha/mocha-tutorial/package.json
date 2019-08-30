@@ -1,0 +1,9 @@
+{
+  "name": "mocha-tutorial",
+  "scripts": {
+    "test": "mocha"
+  },
+  "devDependencies": {
+    "mocha": "^6.2.0"
+  }
+}
