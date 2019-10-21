@@ -1,0 +1,17 @@
+# Dependency directories
+node_modules/
+
+# Build directories
+build/
+
+# Backup directories/files
+**/*.bak*
+
+# Database directories
+.db/mysql/
+
+# Environment variables file
+.env
+
+# package-lock
+package-lock.json

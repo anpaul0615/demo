@@ -1,0 +1,35 @@
+{
+  "name": "express-httpapi-boilerplate",
+  "scripts": {
+    "test": "cross-env NODE_ENV=development mocha",
+    "dev": "cross-env NODE_ENV=development ts-node src/main",
+    "dev:db": "docker-compose up -d",
+    "build": "cross-env NODE_ENV=production tsc"
+  },
+  "devDependencies": {
+    "@types/chai": "^4.2.2",
+    "@types/dotenv": "^6.1.1",
+    "@types/express": "^4.17.1",
+    "@types/jsonwebtoken": "^8.3.3",
+    "@types/mocha": "^5.2.7",
+    "@types/morgan": "^1.7.37",
+    "@types/node": "^12.7.3",
+    "@types/yup": "^0.26.23",
+    "chai": "^4.2.0",
+    "chai-http": "^4.3.0",
+    "mocha": "^6.2.0",
+    "ts-node": "^8.3.0",
+    "typescript": "^3.6.2"
+  },
+  "dependencies": {
+    "body-parser": "^1.19.0",
+    "cross-env": "^5.2.1",
+    "dotenv": "^8.1.0",
+    "express": "^4.17.1",
+    "jsonwebtoken": "^8.5.1",
+    "morgan": "^1.9.1",
+    "mysql": "^2.17.1",
+    "typeorm": "^0.2.18",
+    "yup": "^0.27.0"
+  }
+}
