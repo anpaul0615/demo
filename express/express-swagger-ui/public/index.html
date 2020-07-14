@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <base href="/" />
+  <title>API Document</title>
+  <link rel="icon" href="data:;base64,iVBORw0KGgo=">
+  <link rel="stylesheet" type="text/css" href="swagger-ui/swagger-ui.css" >
+</head>
+<body>
+  <div id="swagger-ui"></div>
+  <script src="swagger-ui/swagger-ui-bundle.js"> </script>
+  <script src="swagger-ui/swagger-ui-standalone-preset.js"> </script>
+  <script>
+    window.onload = function() {
+      const ui = SwaggerUIBundle({
+        url: '/documents/spec',
+        dom_id: '#swagger-ui',
+        docExpansion : 'list',
+        presets: [
+          SwaggerUIBundle.presets.apis,
+          SwaggerUIStandalonePreset
+        ],
+        plugins: [
+          SwaggerUIBundle.plugins.DownloadUrl
+        ],
+        // layout: "StandaloneLayout"
+        layout: 'BaseLayout',
+        onComplete: function() {
+          ui.preauthorizeApiKey('publicToken', '');
+          ui.preauthorizeApiKey('accessToken', '');
+        }
+      })
+      window.ui = ui
+    }
+  </script>
+</body>
+</html>

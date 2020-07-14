@@ -1,0 +1,87 @@
+paths:
+  /sessions:
+    ###
+    # POST /sessions
+    ##
+    post:
+      tags:
+        - 0. Session
+      summary: 로그인
+      security:
+        - publicToken: []
+      requestBody:
+        content:
+          application/json:
+            schema:
+              $ref: '#/components/schemas/SigninRequest'
+      responses:
+        200:
+          content:
+            application/json:
+              schema:
+                type: object
+                properties:
+                  message:
+                    type: string
+                  data:
+                    type: object
+                    properties:
+                      accessToken:
+                        $ref: '#/components/schemas/AccessToken'
+                      accessTokenData:
+                        $ref: '#/components/schemas/AccessTokenData'
+        400:
+          description: '로그인 실패 : 유효하지 않은 아이디/비밀번호'
+        401:
+          description: '요청 실패 : 올바르지 않은 아이디/비밀번호'
+        403:
+          description: '요청 실패 : 인증 시도횟수 초과로 로그인 제한'
+    ###
+    # PUT /sessions
+    ##
+    put:
+      tags:
+        - 0. Session
+      summary: 세션 갱신
+      security:
+        - publicToken: []
+        - accessToken: []
+      responses:
+        200:
+          content:
+            application/json:
+              schema:
+                type: object
+                properties:
+                  message:
+                    type: string
+                  data:
+                    type: object
+                    properties:
+                      accessToken:
+                        $ref: '#/components/schemas/AccessToken'
+                      accessTokenData:
+                        $ref: '#/components/schemas/AccessTokenData'
+        401:
+          description: '요청 실패 : 유효하지 않은 엑세스토큰'
+    ###
+    # DELETE /sessions
+    ##
+    delete:
+      tags:
+        - 0. Session
+      summary: 세션 삭제
+      security:
+        - publicToken: []
+        - accessToken: []
+      responses:
+        200:
+          content:
+            application/json:
+              schema:
+                type: object
+                properties:
+                  message:
+                    type: string
+        401:
+          description: '요청 실패 : 유효하지 않은 엑세스토큰'

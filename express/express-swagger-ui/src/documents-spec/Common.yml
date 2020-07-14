@@ -1,0 +1,68 @@
+components:
+  # headers:
+  # parameters:
+  # requestBodies:
+  # responses:
+  # examples:
+  # links:
+  # callbacks:
+
+  ###
+  # Security Schema
+  ##
+  securitySchemes:
+    publicToken:
+      type: apiKey
+      name: X-PUBLIC-TOKEN
+      in: header
+    accessToken:
+      type: apiKey
+      name: X-ACCESS-TOKEN
+      in: header
+
+  ###
+  # Data Schema
+  ##
+  schemas:
+    ###
+    # Error
+    ##
+    Error:
+      type: object
+      properties:
+        statusCode:
+          type: integer
+        error:
+          type: string
+        message:
+          type: string
+    ###
+    # Response
+    ##
+    Response:
+      type: object
+      properties:
+        message:
+          type: string
+        data:
+          type: object
+    ###
+    # Access Token
+    ##
+    AccessToken:
+      type: string
+      format: byte
+    AccessTokenData:
+      type: object
+      properties:
+        user:
+          type: object
+          properties:
+            id:
+              type: string
+            name:
+              type: string
+            contact:
+              type: string
+            address:
+              type: string

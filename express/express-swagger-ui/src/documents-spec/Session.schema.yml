@@ -1,0 +1,13 @@
+components:
+  schemas:
+    SigninRequest:
+      type: object
+      required:
+        - id
+        - password
+      properties:
+        id:
+          type: string
+        password:
+          type: string
+          format: password
