@@ -1,0 +1,26 @@
+$basic-color: red;
+$fullscreen-color: blue;
+
+body {
+  font-size: 2em;
+  
+  h1 {
+    color: black;
+
+    &:fullscreen {
+      color: $fullscreen-color;
+      background-color: $fullscreen-color;
+      opacity: 0.3;
+    }
+
+    &:hover {
+      color: green; 
+    }
+    &:active {
+      color: yellow;
+    }
+    &:focus {
+      color: gray;
+    }
+  }
+}

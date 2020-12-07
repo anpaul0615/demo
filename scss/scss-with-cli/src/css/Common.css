@@ -1,0 +1,30 @@
+body {
+  font-size: 2em;
+}
+body h1 {
+  color: black;
+}
+body h1:-webkit-full-screen {
+  color: blue;
+  background-color: blue;
+  opacity: 0.3;
+}
+body h1:-ms-fullscreen {
+  color: blue;
+  background-color: blue;
+  opacity: 0.3;
+}
+body h1:fullscreen {
+  color: blue;
+  background-color: blue;
+  opacity: 0.3;
+}
+body h1:hover {
+  color: green;
+}
+body h1:active {
+  color: yellow;
+}
+body h1:focus {
+  color: gray;
+}
