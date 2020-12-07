@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title><%= htmlWebpackPlugin.options.title %></title>
+</head>
+
+<body>
+  <h1>
+    this is index.html
+    <button onClick="toggleFullscreen(this.parentNode)">toggle fullscreen</button>
+  </h1>
+
+  <script>
+    function toggleFullscreen(el) {
+      if (document.fullscreen) document.exitFullscreen();
+      else el.requestFullscreen();
+    }
+  </script>
+</body>
+
+</html>
